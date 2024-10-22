@@ -30,5 +30,5 @@ The competition consists of two phases:
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/repo-name.git
-   cd repo-name
+   git clone https://github.com/gbljdgb/Kaggle-2024-Deepfake-Image-Detection.git
+   cd Kaggle-2024-Deepfake-Image-Detection
