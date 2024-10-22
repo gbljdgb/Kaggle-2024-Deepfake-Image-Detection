@@ -1,0 +1,59 @@
+nEpochs: 10 # 训练最大轮数
+save_ckpt_path: 'ckpts' # 权重保存的文件夹名称, save_ckpt_path+name为保存的文件夹
+name: 'del' # 权重保存的文件夹名称, save_ckpt_path+name为保存的文件夹
+network: 'IPD_Net' # 选择的神经网络结构, 供选择的目标在network/trainer.py中
+manualSeed: 0 # 随机数种子
+printFreq: 10 # 一个epoch的打印次数
+train_batchSize: 16 # 训练batchsize
+val_batchSize: 16 # 验证batchsize
+workers: 8 # dataloader的worker数
+gpu: 2 # 主卡
+select_test: 100 # 如果不为-1, 则代表只是选取一部分的数据来跑全程看会不会报错, 想测试写100就行
+resize_or_crop: 'resize' # 最终输入模型前要进行"resize"还是"crop"
+input_shape: 512 # 最终输入模型前要进行"resize"或"crop"后输入模型的图像大小
+pretrained_path: "" # 预训练模型的位置, 如果为空代表没有自己的预训练模型, 不为空代表继续微调
+
+# 训练时带入的图像增强
+flip_prob: 0.5 # 翻转概率
+rotate_prob: 0.1 # 旋转概率
+rotate_limit: [-10, 10] # 旋转限制
+blur_prob: 0.1 # 高斯模糊概率
+blur_sig: [0.0,1.0] # 高斯模糊系数
+brightness_prob: 0.1 # 亮度对比度变动概率
+brightness_limit: [0, 0.1] # 亮度系数
+contrast_limit: [0, 0.1] # 对比系数
+jpeg_prob: 0.1 # jpeg压缩概率
+jpeg_method: ['cv2','pil'] # jpeg压缩方法
+jpeg_qual: [80, 100] # jpeg压缩质量
+diFF_prob: 0.01 # 选取一部分图像换成扩散模型生成的图像的概率
+diff_path: "SDxl" # 扩散模型的文件夹, 里面全是扩散模型生成的图片
+
+flag: false # 代表这是在训练, 永远为False
+
+data:
+  train_dir_path: "data/GMDD/phase1/trainset"
+  val_dir_path: "data/GMDD/phase1/valset"
+  train_label: "data/GMDD/phase1/trainset_label.txt"
+  val_label: "data/GMDD/phase1/valset_label.txt"
+
+scheduler: # 学习率下降
+  type: CosineAnnealingLR
+  CosineAnnealingLR: # 余弦退火
+    T_max: 10 # 学习率衰减到最小值时，迭代的次数
+    eta_min: 0.000001 # 学习率最小的时候是多少
+    last_epoch: -1 # 学习率下降进行到哪个epoch
+    verbose: True # 调整学习率的时候要不要说
+
+optimizer:
+  type: sgd
+  adam:
+    lr: 0.0001  # learning rate
+    beta1: 0.9  # beta1 for Adam optimizer
+    beta2: 0.999 # beta2 for Adam optimizer
+    eps: 0.00000001  # epsilon for Adam optimizer
+    weight_decay: 0.0005  # weight decay for regularization
+    amsgrad: false
+  sgd:
+    lr: 0.0001  # learning rate
+    momentum: 0.9  # momentum for SGD optimizer
+    weight_decay: 0.0005  # weight decay for regularization

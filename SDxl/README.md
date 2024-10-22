@@ -1,0 +1,1 @@
+The result of running gen_SDxl.py will be here

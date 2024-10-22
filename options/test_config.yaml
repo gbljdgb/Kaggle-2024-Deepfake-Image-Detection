@@ -1,0 +1,19 @@
+save_output_path: 'outputs' # 测试结果保存的文件夹名称, save_output_path+name为保存的文件夹
+name: 'last_test3' # 测试结果保存的文件夹名称, save_output_path+name为保存的文件夹
+network: 'IPD_Net' # 选择的神经网络结构, 供选择的目标在network/trainer.py中
+manualSeed: 0 # 随机数种子
+test_batchSize: 32 # 测试batchsize
+workers: 16 # dataloader的worker数
+gpu: 2 # 主卡
+resize_or_crop: 'resize' # 最终输入模型前要进行"resize"还是"crop"
+input_shape: 384 # 最终输入模型前要进行"resize"或"crop"后输入模型的图像大小
+pretrained_path: "ckpts/last_test3/ckpt_best.pth" # 自己预训练模型的位置,如果为空代表没有自己的预训练模型
+select_test: -1 # 如果不为-1,则代表只是选取一部分的数据来跑全程看会不会报错,想测试写100就行
+
+diFF_prob: 0 # 选取一部分图像换成扩散模型生成的图像的概率, 永远设置为0
+flag: True # 代表这是在测试, 永远设置为True
+placeholder: "ckpts/vit_base_patch16_224_dino/ckpt_best_0.9102912723.pth" # 这是给ViT加载, 用来占位的
+
+data:
+  test_dir_path: "data/GMDD_test/phase2/testset1_seen" # 验证图片在的文件夹
+  test_label: "data/GMDD_test/phase2/testset1_seen_nolabel.txt" # 验证图片的图像名称集合
