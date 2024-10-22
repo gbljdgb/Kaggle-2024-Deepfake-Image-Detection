@@ -1,14 +1,14 @@
 nEpochs: 10 # 训练最大轮数
 save_ckpt_path: 'ckpts' # 权重保存的文件夹名称, save_ckpt_path+name为保存的文件夹
-name: 'del' # 权重保存的文件夹名称, save_ckpt_path+name为保存的文件夹
+name: 'IPD_Net' # 权重保存的文件夹名称, save_ckpt_path+name为保存的文件夹
 network: 'IPD_Net' # 选择的神经网络结构, 供选择的目标在network/trainer.py中
 manualSeed: 0 # 随机数种子
 printFreq: 10 # 一个epoch的打印次数
-train_batchSize: 16 # 训练batchsize
-val_batchSize: 16 # 验证batchsize
+train_batchSize: 32 # 训练batchsize
+val_batchSize: 32 # 验证batchsize
 workers: 8 # dataloader的worker数
 gpu: 2 # 主卡
-select_test: 100 # 如果不为-1, 则代表只是选取一部分的数据来跑全程看会不会报错, 想测试写100就行
+select_test: -1 # 如果不为-1, 则代表只是选取一部分的数据来跑全程看会不会报错, 想测试写100就行
 resize_or_crop: 'resize' # 最终输入模型前要进行"resize"还是"crop"
 input_shape: 512 # 最终输入模型前要进行"resize"或"crop"后输入模型的图像大小
 pretrained_path: "" # 预训练模型的位置, 如果为空代表没有自己的预训练模型, 不为空代表继续微调
