@@ -42,7 +42,9 @@ The competition consists of two phases:
     gen_SDxl.py
 
 4. **Train and Test**:
+
    The weights are stored in . /ckpts folder and output in . /outputs folder.
+   
    ```bash
    python train.py
    python test.py
