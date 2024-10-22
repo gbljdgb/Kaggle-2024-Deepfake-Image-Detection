@@ -24,8 +24,8 @@ The competition consists of two phases:
 
 ### Prerequisites
 - Python 3.x
-- [List any required libraries, e.g., TensorFlow, PyTorch]
-- [Any other dependencies]
+- [PyTorch, numpy and other common deep learning libraries]
+- diffusers[torch]
 
 ### Installation
 1. Clone the repository:
