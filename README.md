@@ -27,8 +27,22 @@ The competition consists of two phases:
 - [PyTorch, numpy and other common deep learning libraries]
 - diffusers[torch]
 
-### Installation
-1. Clone the repository:
+### How to Run the Code
+1. **Prepare Your Environment**:
+   Ensure that you have Python 3.x installed and that you have set up a virtual environment (optional but recommended).
+
+2. **Clone the repository**:
    ```bash
    git clone https://github.com/gbljdgb/Kaggle-2024-Deepfake-Image-Detection.git
    cd Kaggle-2024-Deepfake-Image-Detection
+
+3. **Prepare supplementary training set for diffusion model generation (optional)**:
+   The generated diffusion model image is saved in the ./SDxl folder.
+    ```bash
+    gen_SDxl.py
+
+4. **Train and Test**:
+   The weights are stored in . /ckpts folder and output in . /outputs folder.
+   ```bash
+   python train.py
+   python test.py
