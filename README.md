@@ -6,16 +6,16 @@ Welcome to the open-source repository for the **Inclusion: The Global Multimedia
 
 The competition consists of two phases:
 
-### Phase 1: [Track 1: Deepfake Image Detection]
+### Phase 1: [Track 1: Deepfake Image Detection](https://www.kaggle.com/competitions/multi-ffdi)
 - **Objective**: [In the first phase, only the training and validation sets are released, and the leaderboard is sorted by the validation set]
-- **Duration**: [Start date - End date]
+- **Duration**: [Jun 30 - Aug 22]
 - **Evaluation Metric**: [AUC]
 - **Ranking**: [38/706]
 - **AUC Score**: [0.9982558829]
 
-### Phase 2: [Phase 2 Title]
+### Phase 2: [Phase 2: submitting test results](https://www.kaggle.com/competitions/multi-ffdi-phase2)
 - **Objective**: [In phase 2, the test set is released and the test set is used as a leaderboard result for phase 2]
-- **Duration**: [Start date - End date]
+- **Duration**: [Aug 15 - Aug 22]
 - **Evaluation Metric**: [AUC]
 - **Ranking**: [46/184]
 - **AUC Score**: [0.9551696556]
