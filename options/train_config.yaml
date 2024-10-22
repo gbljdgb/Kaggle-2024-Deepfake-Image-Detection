@@ -25,7 +25,7 @@ contrast_limit: [0, 0.1] # 对比系数
 jpeg_prob: 0.1 # jpeg压缩概率
 jpeg_method: ['cv2','pil'] # jpeg压缩方法
 jpeg_qual: [80, 100] # jpeg压缩质量
-diFF_prob: 0.01 # 选取一部分图像换成扩散模型生成的图像的概率
+diFF_prob: 0.0 # 选取一部分图像换成扩散模型生成的图像的概率
 diff_path: "SDxl" # 扩散模型的文件夹, 里面全是扩散模型生成的图片
 
 flag: false # 代表这是在训练, 永远为False
