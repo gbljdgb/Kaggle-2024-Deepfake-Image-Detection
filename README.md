@@ -1,4 +1,4 @@
-# Inclusion: The Global Multimedia Deepfake Detection
+# [Kaggle-2024-competitions] Inclusion: The Global Multimedia Deepfake Detection
 
 Welcome to the open-source repository for the **Inclusion: The Global Multimedia Deepfake Detection** competition on Kaggle. This project aims to advance the detection of deepfake media across various formats and platforms.
 
