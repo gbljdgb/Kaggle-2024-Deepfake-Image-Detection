@@ -2,6 +2,8 @@
 
 Welcome to the open-source repository for the **Inclusion: The Global Multimedia Deepfake Detection** competition on Kaggle. This project aims to advance the detection of deepfake media across various formats and platforms.
 
+![图片alt](/figures/path_to_save_combined_image.jpg "faces")
+
 ## Competition Overview
 
 The competition consists of two phases:
