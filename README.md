@@ -51,3 +51,15 @@ The competition consists of two phases:
    ```bash
    python train.py
    python test.py
+
+### How to Use the API after training
+1. **Configuration File Modification**
+
+   Before using the API, please ensure you modify the configuration file `test_config.yaml`. You can find the file at the following link:
+
+   [Changing test_config.yaml](https://github.com/gbljdgb/Kaggle-2024-Deepfake-Image-Detection/blob/main/options/test_config.yaml)
+
+2. **Running API**:
+   ```bash
+   python API.py
+   curl -X POST -F "image=@[image_path_put_here]" http://localhost:10086/predict
