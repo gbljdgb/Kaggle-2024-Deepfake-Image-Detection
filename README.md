@@ -15,7 +15,7 @@ The competition consists of two phases:
 - **Ranking**: [38/706]
 - **AUC Score**: [0.9982558829]
 
-### Phase 2: [Phase 2: submitting test results](https://www.kaggle.com/competitions/multi-ffdi-phase2)
+### Phase 2: [Track 1: submitting test results](https://www.kaggle.com/competitions/multi-ffdi-phase2)
 - **Objective**: [In phase 2, the test set is released and the test set is used as a leaderboard result for phase 2]
 - **Duration**: [Aug 15 - Aug 22]
 - **Evaluation Metric**: [AUC]
