@@ -20,8 +20,8 @@ rotate_limit: [-10, 10] # 旋转限制
 blur_prob: 0.1 # 高斯模糊概率
 blur_sig: [0.0,1.0] # 高斯模糊系数
 brightness_prob: 0.1 # 亮度对比度变动概率
-brightness_limit: [0, 0.1] # 亮度系数
-contrast_limit: [0, 0.1] # 对比系数
+brightness_limit: [0.9, 1.1] # 亮度因子范围
+contrast_limit: [0.9, 1.1] # 对比度因子范围
 jpeg_prob: 0.1 # jpeg压缩概率
 jpeg_method: ['cv2','pil'] # jpeg压缩方法
 jpeg_qual: [80, 100] # jpeg压缩质量
